@@ -1,0 +1,6 @@
+{
+  "name": "2025 AIl Project Dashboard",
+  "description": "An intelligent project management dashboard that uses AI to generate tasks from a project overview, start date, and deadline, allowing users to track progress.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}

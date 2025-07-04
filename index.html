@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Project Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      /* Apply custom scrollbar globally */
+      scrollbar-width: thin; /* For Firefox */
+      scrollbar-color: #cbd5e1 #f7fafc; /* For Firefox: thumb track - slate-300 bg-gray-50 */
+    }
+    /* Custom scrollbar for Webkit browsers (Chrome, Safari, Edge) */
+    ::-webkit-scrollbar {
+      width: 6px; /* Thinner scrollbar */
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f8fafc; /* Notion-like light track (slate-50) */
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #cbd5e1; /* Notion-like thumb (slate-300) */
+      border-radius: 3px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #94a3b8; /* Slightly darker on hover (slate-400) */
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.5.1",
+    "recharts": "https://esm.sh/recharts@^2.15.3"
+  }
+}
+</script>
+
+</head>
+<body class="bg-gray-50 text-gray-900">
+  <div id="root"></div>
+  <script type="module" src="/src/index.tsx"></script> 
+</body>
+</html>
